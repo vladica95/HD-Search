@@ -1,0 +1,11 @@
+Hello, I have done this task in Visual Studio 2017 .Net 4.6.1
+Have in mind that time is needed to create nodes in tree, so please be patient until tree is loaded. Thank you.
+I have 2 global variables log and filter. In log will be stored information about folders are files that program didn't have permission to access. With filter will be decided what type of files will be displayed in tree.
+On form load logical drives will be loaded and displayed in list box.
+ListDirectory will create tree starting with selected logical drive.
+WalkDirectoryTree is recursive function that goes through directories and files and add them as nodes in tree.
+lbxDrives_SelectedIndexChanged is event handler when item from list box is selected it will clear text boxes and call function DriveInfoAndThree in that function will be called function DriveInfoTxtBox that will show in text box information about drive and function ListDirectory that will create tree for selected drive.
+tvTree_AfterSelect is event handler when item is selected in treeView it will show information about selected item in text boxes.
+SelectedItemInfo will fill text boxes with infomation about selected item in treeView.
+tvTree_NodeMouseDoubleClick is event handler when user double click on node in treeView it will try to open that file or folder.It depends of access permission of file or folder. 
+btnFileFilter_Click is event handler when is clicked on button it will use text from txtFileType as filter and new tree will be displayed only with folders and files of that type.
